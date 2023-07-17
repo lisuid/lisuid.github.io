@@ -1,0 +1,132 @@
+#page:has(#icat_page) {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  #web_bg ~ .page:has(#icat_page) {
+    background: var(--card-bg);
+  }
+  /* page背景调整 */
+  
+  .icat-content.icat-content-item.icatPage {
+    height: 19rem;
+    color: var(--icat-white);
+    overflow: hidden;
+    margin-top: 0;
+    border-radius: 12px;
+    border: var(--style-border-always);
+    box-shadow: var(--icat-shadow-border);
+  }
+  .icat-content-item .icat-card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .icat-content-item .icat-content-item-tips {
+    opacity: .8;
+    font-size: .6rem;
+    margin-bottom: .5rem;
+  }
+  .icat-content-item .icat-card-content .icat-content-item-title {
+    margin-bottom: .5rem;
+  }
+  .icat-content-item .icat-content-item-title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .icat-content-item .icat-content-bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icat-content-item .icat-content-bottom .icat-tips {
+    font-weight: bold;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button {
+    height: 40px;
+    width: auto;
+    padding: 0 22px;
+    border-radius: 20px;
+    justify-content: center;
+    background: var(--icat-white);
+    color: var(--icat-black);
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transform: translateZ(0);
+    box-shadow: 0 8px 16px -4px var(--icat-black-op);
+  }
+  .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button i {
+    margin-right: 4px;
+    font-weight: bold;
+  }
+  #page:has(#icat_page) .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button:hover {
+    background: var(--icat-blue);
+    color: var(--icat-white);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .icat-content-item .icat-card-content {
+      padding: 1rem 1rem;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button {
+      width: 60px;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button i {
+      margin-right: -3px;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button-text {
+      display: none;
+    }
+  }
+  /* 响应式 */
+  
+  /* icat-page顶部样式 */
+
+
+
+#welcome-info {
+  overflow: hidden;
+  border-radius: 14px;
+  --icat-welcome-color: #49B1F5;
+}
+#welcome-info .welcome-time {
+  width: 100%;
+  margin: 12px 0 0;
+  display: inline-flex;
+}
+#welcome-info .welcome-message {
+  width: 100%;
+  margin-bottom: 8px;
+  display: inline-flex;
+}
+#welcome-info .welcome-region {
+  background: #f7f9fe;
+  border: 1px solid #e3e8f7;
+  color: #363636;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  margin: 6px 0;
+}
+  
+  /* 欢迎信息栏样式 */
+
+
+
+
+
+  
