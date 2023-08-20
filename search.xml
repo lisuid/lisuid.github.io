@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156.html"/>
+      <url>/posts/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>he</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/posts/0.html"/>
+      <url>/posts/0.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>初一往事</title>
       <link href="/posts/76c77c8a.html"/>
       <url>/posts/76c77c8a.html</url>
@@ -73,37 +105,6 @@
         <tags>
             
             <tag> 知识 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>部署属于自己的gpt</title>
-      <link href="/posts/f4353c88.html"/>
-      <url>/posts/f4353c88.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="ChatGPT-Vercel"><a href="#ChatGPT-Vercel" class="headerlink" title="ChatGPT-Vercel"></a>ChatGPT-Vercel</h1><p><img src="assets/preview-light.png#gh-light-mode-only" alt=""><br><img src="assets/preview-dark.png#gh-dark-mode-only" alt=""></p><p><a href="https://user-images.githubusercontent.com/48356807/232432194-46ba797f-ad9d-476a-a739-20e0b3d63eb2.mp4">https://user-images.githubusercontent.com/48356807/232432194-46ba797f-ad9d-476a-a739-20e0b3d63eb2.mp4</a></p><blockquote><p>本项目基于 <a href="https://github.com/ddiu8081/chatgpt-demo">chatgpt-demo</a> 开发。正式版本（v1.0.0）使用 Solid-Start 框架，并且不再开启 SSR。请重新设置环境变量。</p></blockquote><p>在线预览:</p><ol><li><a href="https://vercel-chatgpt-github.vercel.app">vercel.app</a> 被墙。</li><li><del><a href="https://www.aitoolgpt.com">aitoolgpt.com</a>，由 <a href="https://m.okjike.com/users/4af3cfb4-1291-4a8b-b210-f515c86934a9">@AUDI_GUZZ</a> 免费提供</del>。（2023.03.22 壮烈牺牲，提醒大家不要分享自己的站点，请小范围内使用）。</li></ol><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol><li>UI 优雅简洁的同时功能尽可能强大，细节满满，等你发现。同时满足小白和大佬使用。</li><li>快速部署到国外平台，支持 Vercel，Netlify，Railway，免翻墙使用，方便分享给朋友。</li><li>支持 PWA。</li><li>支持 Prompts 预设，使用 <kbd>空格</kbd> 或者 <kbd>/</kbd> 搜索，可以模糊匹配，突出显示匹配的文字。</li><li>支持多个对话（聊天），并且每个对话都可以单独设置，自由设置角色，不同对话可以通过 URL 直达。使用 <kbd>空格</kbd><kbd>空格</kbd> 或者 <kbd>/</kbd><kbd>/</kbd> 搜索，可以模糊匹配，搜索历史消息。</li><li>支持导出和导入对话和设置。</li><li>实时查看当前对话会消耗的 token 以及回答的 token，及时打断。</li><li>支持多种余额查询方式，支持定时查询内置账号余额，并且发送到微信。</li><li>支持 URL query，当作搜索引擎使用，所有对话都支持。比如 <code>url?q=keyword</code> 或者 <code>url/session/xxxxx?q=keyword</code></li></ol><h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><ul><li>有效上下文：剔除报错的部分对话。如果关闭连续对话，将只统计锁定了的部分对话。这个概念很关键。</li><li><p>锁定对话：点击每条消息前面的头像，就可以锁定了。锁定有什么好处？清空对话时，锁定了的不会删除。关闭连续对话时，始终会发送锁定了的对话，相当于角色设定。关闭 <code>记录对话内容</code> 后，始终会记录锁定了的对话，下次刷新仍然存在。</p></li><li><p>Open AI Key 要怎么获得：注册 OpenAI 的帐号，然后 <a href="https://platform.openai.com/account/api-keys">生成 Key</a> 就行了。现在注册就送 5 美元，可以用一两个月。嫌注册麻烦，可以直接去买号，自行搜索。注意不要被骗，一般 5 元以下可以入手，看到有 120 美元的 key，这种属于是绑了虚拟信用卡，可以透支 120 美元，只能用一个月，而且容易封号。现在没绑卡的账号限制比较多，并且容易封号。绑了卡也会优先扣除赠送的余额。</p></li><li>输入框<ul><li><kbd>Enter</kbd>发送（可关闭），<kbd>Shift</kbd>+<kbd>Enter</kbd>换行。</li><li><kbd>空格</kbd> 或者 <kbd>/</kbd> 搜索 Prompt 预设，可以模糊匹配。所有 Prompt 可以查看 <a href="prompts.md">prompts.md</a> 。</li><li>使用 <kbd>空格</kbd><kbd>空格</kbd> 或者 <kbd>/</kbd><kbd>/</kbd> 搜索其它对话，可以模糊匹配，搜索历史消息。</li><li><kbd>↑</kbd> 将最近的一次提问填到输入框里。</li></ul></li><li>消息上的动作<ul><li>提问<ul><li>编辑：不能原地编辑，只能自动填到输入框里。</li><li>重新回答：删除当前对话，然后自动发送。</li><li>删除：删除当前对话。</li></ul></li><li>回答<ul><li>复制</li><li>重新回答</li><li>删除：只删除回答。</li></ul></li></ul></li><li>点击顶部标题滚动到顶部，点击输入框滚动到底部。</li><li>发送 sk- 开头的 key，可以直接查询余额。可以换行查询多个。也可以发送 <code>查询填写的 Key 的余额</code> 来直接查询你填的 key 的余额，这个 Prompt 预设第一个就是，直接用。作为站长，你可以通过设置环境变量来定时查询所有内置 key 的余额，并发送到微信上。</li><li>url 里使用 <code>url?q=你好啊</code> 这种方式可以打开网页直接回答 <code>你好啊</code>，当作搜索引擎使用。所有的对话中都可以使用。</li></ul><h3 id="设置与动作"><a href="#设置与动作" class="headerlink" title="设置与动作"></a>设置与动作</h3><p>右边四个按钮是动作，点击就可以执行。</p><ul><li>伪装角色：伪装时直接进入对话里，不会发送请求。可以伪装成用户提问以及 GPT 回答。发送后自动关闭伪装。</li><li>将当前对话生成图片，方便分享。在电脑上直接复制到剪贴板，手机上是下载。</li><li>将当前对话生成 Markdown，直接复制到剪贴板。</li><li>清空对话。</li></ul><p><img src="https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/image-20230417134751367.png?x-oss-process=base_webp" alt="image-20230417134751367"></p><p>现在支持了多个对话，也就是多个聊天。不同的对话可以单独设置，也有不同的链接，标题，图标。所以现在有了两个设置按钮，第一个是全局设置，可以填写密码，API Key，也可以关闭 Enter 键发送，这样在手机上也可以换行。</p><p><img src="https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/image-20230417134833609.png?x-oss-process=base_webp" alt="image-20230417134833609"></p><p>第二个是对话设置，尽当前对话有效，针对不同的用途自行设置。目前 GPT4 仍然处于 waitlist 阶段，如果没有资格，那么无法使用。</p><p>思维发散程度越高，ChatGPT 就会乱答，如果是开放性的问题，可以适当调高，但也不要超过 1。需要确切答案的建议调为 0。</p><p>开启 <code>记录对话内容</code> 后，对话刷新也不会清空。开启连续对话后，每次会发送所有有效上下文，一开始提过有效上下文这个概念。</p><p><img src="https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/image-20230417134804056.png?x-oss-process=base_webp" alt="image-20230417134804056"></p><p>当你点击了设置按钮之后，会发现右边的动作按钮也发生了变化。打开全局设置后，出现的导出和导入按钮。可以导出和导入所有的设置和对话。</p><p>而打开对话设置之后，在首页，也就是主对话里，就只有一个新建对话的按钮，当你新建了对话。就会出现复制对话链接以及删除对话的按钮。值得注意的是，目前这个链接只能你自己能打开，并没有上传到云端。</p><p><img src="https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/image-20230417135644474.png?x-oss-process=base_webp" alt="image-20230417135644474"></p><p>在新的对话里，你可以设置标题，甚至可以设置图标，试试在标题前面加一个 Emoji。</p><h2 id="部署一个你自己的-ChatGPT-网站（免费，国内直连）"><a href="#部署一个你自己的-ChatGPT-网站（免费，国内直连）" class="headerlink" title="部署一个你自己的 ChatGPT 网站（免费，国内直连）"></a>部署一个你自己的 ChatGPT 网站（免费，国内直连）</h2><p><a href="http://vercel.com/?utm_source=busiyi&amp;utm_campaign=oss"><img src="assets/powered-by-vercel.svg" alt=""></a></p><blockquote><p><strong>Warning</strong></p><p>vercel.app 域名已经被墙，但 vercel 本身没有被墙，所以你绑定自己的域名就可以了。如果广泛分享，域名有被墙的风险。如果是国内购买的域名，有请去喝茶的风险，所以要么小范围加密码使用，要么在国外购买域名。更推荐小范围内使用。</p></blockquote><p>如果你只需要部署一个你自己用的网站，而不需要定制，那么你完全不需要在本地跑起来，你可以直接点击下面的按钮，然后按照提示操作，然后在 Vercel 中填入环境变量即可。</p><p><a href="https://vercel.com/new/clone?utm_source=busiyi&amp;utm_campaign=oss&amp;repository-url=https://github.com/ourongxing/chatgpt-vercel&amp;env=OPENAI_API_KEY"><img src="https://vercel.com/button?utm_source=busiyi&amp;utm_campaign=oss" alt="Deploy with Vercel"></a></p><p>不过上面这种方式不容易更新，最好还是先 fork 本仓库，然后在 <a href="https://vercel.com/new?utm_source=busiyi&amp;utm_campaign=oss">Vercel</a> 中导入你自己的仓库，之后要更新就在 Github 里点击 <code>Sync fork</code> 就可以同步更新了。</p><p>如果你需要部署给更多人用，需要修改一些代码，那么你可能需要将上面创建的你自己的仓库 <code>git clone</code> 到本地。改完了 <code>git commit &amp; push</code> 即可重新部署，vscode 上点几下就可以了。也可以用 vercel 的 cli，<code>vercel deploy --prod</code>。</p><p>如果你需要在本地开发和调试，有点麻烦：</p><ol><li>升级到 <code>node18</code>，要用到原生的 <code>fetch</code> 和 <code>readableStream</code>。</li><li>API 被墙了，自己想办法开代理，不然要报错。可以设置 OpenAI 的代理 API，也可以直接 <code>vercel deploy</code> 部署到 vercel 开发环境上调试。</li><li><code>pnpm i</code> 安装依赖。</li><li><code>pnpm dev</code> 启动项目。</li></ol><h3 id="更多部署方案"><a href="#更多部署方案" class="headerlink" title="更多部署方案"></a>更多部署方案</h3><p>目前本项目除 Vercel 以外还支持</p><ul><li><a href="https://www.netlify.com/">Netlify</a>：直接导入即可。</li><li><a href="https://cloudflare.com/">CloudFlare Worker</a>：使用 Github Action 部署，需要设置 <code>CF_API_TOKEN</code>。</li><li><a href="https://railway.app/">Railway</a>：直接导入即可。</li></ul><p>不建议使用除 Vercel 以外的部署方案。 除了比较慢以外，更重要的是只有 Vercel 支持设置 Edge Function 服务器的地区，其他平台会自动使用距离最近的服务器，有可能是 OpenAI 不支持的地区，从而导致封号。</p><h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><blockquote><p>v1.0.0 版本环境变量变化比较大，需要重新设置。以 <code>CLIENT_</code> 开头的变量会暴露给前端，请不要填写敏感信息。</p></blockquote><div class="table-container"><table><thead><tr><th>环境变量</th><th>说明</th><th>默认值</th></tr></thead><tbody><tr><td><code>OPENAI_API_KEY</code></td><td>OpenAI API Key，可以填写多个，用 \</td><td>或者 换行 隔开，随机调用。最好是多填几个，API 有并发上的限制。如果用户不填自己的 key，那么就会使用你的 key。</td><td>无</td></tr><tr><td><code>OPENAI_API_BASE_URL</code></td><td>本地开发时可以填写 OpenAI 的代理服务器，但是 Vercel 不需要。并且不建议生产阶段使用。</td><td>api.openai.com</td></tr><tr><td><code>NO_GFW</code></td><td>表示可以服务器可以直连，不需要<code>OPENAI_API_BASE_URL</code>，就算设置了也不使用。</td><td>false</td></tr><tr><td><code>TIMEOUT</code></td><td>OpenAI API 超时。单位为毫秒，Vercel Edge Function 最大超时为 30000。</td><td>30000</td></tr><tr><td><code>PASSWORD</code></td><td>网站密码</td><td>无</td></tr><tr><td><code>CLIENT_DEFAULT_MESSAGE</code></td><td>默认提示信息</td><td>- xx xx</td></tr><tr><td><code>CLIENT_GLOBAL_SETTINGS</code></td><td>默认全局设置</td><td>{“APIKey”:””,”password”:””,”enterToSend”:true}</td></tr><tr><td><code>CLIENT_SESSION_SETTINGS</code></td><td>默认对话设置，对话设置在每个对话中都是独立的。</td><td>{“title”:””,”saveSession”:true,”APITemperature”:0.6,”continuousDialogue”:true,”model”:”gpt-3.5”}</td></tr><tr><td><code>CLIENT_MAX_INPUT_TOKENS</code></td><td>有效上下文+输入的 token 数。OpenAI 不同模型的最大 token 不一样，价格也不同，可以分别设置。并且 OpenAI 会统计输入+输出之和，但我们这里只限制输入。</td><td>{“gpt-3.5”:16000,”gpt-4”:32000}</td></tr><tr><td><code>SEND_KEY</code></td><td>使用 <a href="https://sct.ftqq.com/sendkey">Server 酱</a> 推送帐号余额以及可用状态到微信，如果需要自行获取。推送时间为早上 8 点和晚上 8 点，在 vercel.json 文件中修改。如果 key 太多，超过 20 个，有可能失败。</td><td>无</td></tr><tr><td><code>SEND_CHANNEL</code></td><td><a href="https://sct.ftqq.com/sendkey">Server 酱</a> 的推送通道，默认微信服务号。</td><td>9</td></tr></tbody></table></div><p>有两种设置方式</p><ol><li><p>将 <code>.env.example</code> 文件修改为 <code>.env</code>，在 <code>.env</code> 中设置。</p></li><li><p>Vercel 中设置 <code>Environment Variables</code>。尽量使用这种方式，比较方便。会在下次部署时生效。</p><p><img src="assets/environment.png" alt=""></p></li></ol><h3 id="默认全局设置"><a href="#默认全局设置" class="headerlink" title="默认全局设置"></a>默认全局设置</h3><blockquote><p>记得删除注释，或者直接复制上面表格里的。</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;APIKey&quot;: &quot;&quot;, // 默认填写的 key，不需要填写，否则其他人看得到。</span><br><span class="line">  &quot;password&quot;: &quot;&quot;, // 默认填写的密码，不需要填写，否则其他人看得到。</span><br><span class="line">  &quot;enterToSend&quot;: true // 回车键发送消息</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="默认对话设置"><a href="#默认对话设置" class="headerlink" title="默认对话设置"></a>默认对话设置</h3><blockquote><p>对话设置在每个对话中都是独立的。记得删除注释，或者直接复制上面表格里的。</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;title&quot;: &quot;&quot;, // 对话标题，不需要填写</span><br><span class="line">  &quot;saveSession&quot;: true, // 记录当前对话内容，刷新不会丢失。关闭后仍然会记录锁定的对话。</span><br><span class="line">  &quot;APITemperature&quot;: 0.6, // 0-2，思维发散程度，越高 ChatGPT 思维就越发散，开始乱答，甚至会乱码，建议小于 1 。</span><br><span class="line">  &quot;continuousDialogue&quot;: true, // 开启连续对话，每次都需要将上下文传给 API。</span><br><span class="line">  &quot;model&quot;: &quot;gpt-3.5&quot; // 模型，gpt-3.5、gpt-4。会自动根据 tokens 大小选择合适的模型。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="提交你的-Prompts"><a href="#提交你的-Prompts" class="headerlink" title="提交你的 Prompts"></a>提交你的 Prompts</h2><ol><li>Fork 本项目。</li><li>修改 <code>prompts.md</code>。</li><li>Pull Request 即可。</li></ol><p>如果你不懂这个操作，也可以直接在 Issues 提交你的 Prompts。目前大部分 Prompts 来自于 <a href="https://github.com/PlexPt/awesome-chatgpt-prompts-zh">awesome-chatgpt-prompts-zh</a>，当然，这个仓库大多数也是翻译的 <a href="https://github.com/f/awesome-chatgpt-prompts">awesome-chatgpt-prompts</a>，一并感谢。</p><h4 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h4><ul><li>把需要输入的内容放在最后，可以提示 ChatGPT 开始输入了，比如 “我的第一句话是：”。</li><li>尽可能去优化已有的 Prompts，而不是重复添加。</li><li>添加到结尾，我会定期整理。</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> chatgpt </category>
-          
-          <category> AI </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> AI </tag>
-            
-            <tag> chatgpt </tag>
-            
-            <tag> 教程 </tag>
             
         </tags>
       
@@ -278,7 +279,7 @@
       <link href="/posts/b853ce8d.html"/>
       <url>/posts/b853ce8d.html</url>
       
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="0fabe4b9f893b54ce6467cf1390affb69637bc099a791f06da2a127b883c7df8">52dfe27d09a8ee95fea7ecac6c132aa9e7185fe9591b99433b199468f65b520c</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入访问密码后查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="0762fad60f8bb292cb856f53221d82486a405277c1716a4f3e4435864b74bd4f">52dfe27d09a8ee95fea7ecac6c132aa997248cce046ca26676f76f0e521c7f3f2518017c293ec66f4d5e980dca88e7a1d04733bf12fbfd6a483bb08f6bb7d8391d72e8c83a142b2b4b9fdb42bc00237643d11a37d93daeeef8ba567a73f8544498dbf0210ccaf42faec90b54af44f7161d92ed67c8a760de0622f6f2c5b0f9b52df2909a4b9dd592056ab005f81adc59356e0e5a5764adae318d28af8aac5641043a27879d3fda26a56f793cf0cd741b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入访问密码后查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
@@ -305,25 +306,6 @@
       
         <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="d854898871cf87b3b484e0741dd044a7bbf594f083bc8660b989f589b39d8c45">52dfe27d09a8ee95fea7ecac6c132aa997248cce046ca26676f76f0e521c7f3f4636694791a072bc7826ee014d1a0a9f04a111da7bcce57d7ec376c3d08eef81e1fc394bd3cace76c3a4b37bb3fa2640613485e55fe9e63270f9bf19f84a57a3b6fb2aaf04e43fe19b19db980d3f86dd90df7f448bb4bd8dff6dd3bd041f8dc2f4cb4c1a8237a1eb12a9ceb3125e6858f1183ad10940a0983f7863763f8f47c365515c774c53b625774853df46f050efae776e26eac5f29f40eb4c08edf32732311220950e4ef27a6333a902b937e29ce5e2f80654a3492a64fbf166fd70433e77d8b5c7a15ab7e32551d1c35d9cf3adddac0c83a995072640d90a00ca64b8410f286fde75e0f40a88fb2c502398a145f2b49658f8dd85b8ab8ed36960f1f4a5445f578fa45cac00b78e4905539127a8094f2f1d501723443b740c11778cc95fe3aa2d74f061d75d8336c00ef97a6d0907d4fa423f9aa3931ce3e1304eb03019f8e6b7d469c91a7c00dac89a0647b76d213cbc85a9e655eff845a2a45380376187672e119d19014818de5d26be71c6eda9358d6f6234c899c81982120ce60f78120c9dd44bc0eb4f81edf1796ee0d1feda37cb9cc586ad9d9b51e458d53ca258a59e26e7b2b0198d612a5c71a4ba05039498803f4fa139c9aba98c39daaa8ba53f64be5683227ed108e618a9739046f676d62a908cfa9ad8491e9ab14a11e879c6ad0fe2ec76737e20b5e75ab27e797541eb2b4d67d37cff80bee5aa87852eb0acc83794b79ac8b65b86251abeae3c7a1fac0bbbbc5d7e1de8d40cba3428104e62cff981076c2ee1c731769236aae48493e1765b285f8d89b02c2d7cc3750233ce1306e904fb114c44cd95a505370d23f2abb25069b7c0122690fdab449bf5efbbb1c357ad9dfaad27738aa2248fd2e28397e514de6cd2f64fe76876d65f3b53d85c3d0574bfed4ccfa9b8dc89787d06db892f48b23bf414b235a989cb79f4966195bd0c39f17bb6880142c9f86a07a71e7b0ae51c546f394c95282b97d5f54f37caebd57a017a91913d0091b4812706397c97bfb4f924612f9da7695276b3093094fcdaf525969cb5e654fb8184b2916b0e95f8259793e41e420126ce4430c4391e79e1a0cd24fc4f66acbb09d2a11fbdb5d6d53be50f4cfde69b45bb359e54dbd993a4c93995f83921eded2557bdb05ae16bb0a6e69a404097493e195d47eae9c398d4904b305240761624549d00141c8c69bd2cfface273d93b1021e4bcfb8cf522391bd37d95a890e41dada101acda60e3c9045995ccd36050a117f67d3c58768324771b9b4e7c8a3a897832e3c351b7c88cad161f7c0a513d7814f2ecc9630a30af960a96cf5af4c9c0b25cb99860e498e5cb638a3879028f0e92091f6e428e0be936ed971398861ef7fa3163407b9984e396be20672f708153d91edfb8ce24b66d1fe10af17f4386cb295021bf146a646e7a70ee9b26c6ff58d2c9f538</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入访问密码后查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/posts/4a17b156.html"/>
-      <url>/posts/4a17b156.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>he</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
       
       
     </entry>
