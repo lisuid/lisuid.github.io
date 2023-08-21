@@ -5947,6 +5947,12 @@ body[data-type="link"] #page .page-title {
   display: none;
   color: var(--anzhiyu-secondtext);
   font-size: 0.5rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
   position: fixed;
   top: 245px;
   left: 32px;
