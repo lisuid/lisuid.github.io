@@ -52,7 +52,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: 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
-          repository-name: lisuid/lisuid.github.io
+          repository-name: lisuid/Hexo-blog-source
           branch: main
           folder: public
           commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
