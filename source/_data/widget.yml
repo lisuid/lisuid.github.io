@@ -1,0 +1,7 @@
+top:
+  - class_name:
+    id_name:
+    name: 来访者
+    icon: iconfont icat-visitor
+    html: <div id="welcome-info"></div>
+

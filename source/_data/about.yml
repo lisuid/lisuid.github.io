@@ -1,0 +1,91 @@
+- class_name: 关于页
+  subtitle: 生活明朗，万物可爱✨
+  avatarImg: https://s3.qjqq.cn/3/64de148060f7b.webp!color
+  name: 王圣杰
+  description: 是一名学生、博主
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 学习
+      - 生活
+      - 努力
+      - 体验
+      - 追求
+  helloAbout: Hello there!
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    item:
+      - EDU,软件工程专业
+    img: https://bu.dusays.com/2023/04/21/644287166329b.png  
+  statistic:
+    link: /archives
+    text: 文章隧道
+    cover: https://s3.qjqq.cn/3/64d6f5c67cd42.webp!color
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，广东
+    background: https://pic.imgdb.cn/item/64abc4ec1ddac507ccc5cd74.webp
+    backgroundDark: https://s3.qjqq.cn/3/64ddf8ef879e5.webp!color
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 2007
+    selfInfoTips2: xxx
+    selfInfoContent2: 数控加工
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 学生👨‍🎓
+  
+  personalities:
+    author_name: 主角
+    personality_type: ENFJ-T
+    photo_url: https://s3.qjqq.cn/3/64ddf8b525901.webp!color
+    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+    name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
+
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 生而无畏，
+    maxim_bottom: 战至终章。
+  buff:
+    buff_tips: 特长
+    buff_top: 脑回路新奇的 酸菜鱼
+    buff_bottom: 二次元指数 MAX
+  game:
+    game_tips: 爱好游戏
+    game_title: 王者荣耀
+    game_uid: "UID:默许相思。"
+    game_bg: https://pic.imgdb.cn/item/64c4cb0b1ddac507cc52a40d.jpg
+  comic:
+    comic_tips: 爱好番剧
+    comic_title: 追番
+    comic_list:
+      - name: 约定的梦幻岛
+        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://bu.dusays.com/2023/05/27/647166c44b414.webp
+      - name: 咒术回战
+        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://bu.dusays.com/2023/05/24/646db4398832e.webp
+      - name: 紫罗兰永恒花园
+        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://bu.dusays.com/2023/05/24/646db43983d99.webp
+      - name: 鬼灭之刃
+        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://bu.dusays.com/2023/05/24/646db439856a0.webp
+      - name: JOJO的奇妙冒险 黄金之风
+        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
+        cover: https://bu.dusays.com/2023/05/30/64760e38d651a.webp
+  like:
+    like_tips: 关注偏好
+    like_title: kpl、b站
+    like_bg: https://s3.qjqq.cn/3/64d88396bd8dd.webp!color
+    like_bottom: 游戏、王者、吃鸡
+  music:
+    music_tips: 音乐偏好
+    music_title: 许嵩、民谣、华语流行
+    music_bg: https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg
+    music_link: /music
