@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156.html"/>
+      <url>/posts/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>he</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CDN使用教程</title>
       <link href="/posts/9b29b328.html"/>
       <url>/posts/9b29b328.html</url>
       
-        <content type="html"><![CDATA[<p>本站使用的是由<u><a href="https://www.chuqiyun.com/">初七云</a></u>提供的海外cdn加速 (无需备案即可使用)。<br>本篇文章来教大家如何给自己的网站或博客接入cdn，使你的网站访问速度更快。希望这篇文章对你有帮助！话不多说马上开始教程</p><h1 id="初七云海外加速cdn接入教程"><a href="#初七云海外加速cdn接入教程" class="headerlink" title="- 初七云海外加速cdn接入教程"></a>- 初七云海外加速cdn接入教程</h1><h2 id="步骤一：注册并实名认证账号"><a href="#步骤一：注册并实名认证账号" class="headerlink" title="步骤一：注册并实名认证账号"></a><strong>步骤一</strong>：注册并实名认证账号</h2><p> 去到<a href="https://www.chuqiyun.com/">初七云的官网</a>注册一个账号，然后选购产品选择内容网络分发，注意要实名，实名需要1块钱！<br> <img src="https://s3.qjqq.cn/3/64f83b7bc229a.webp!color" alt="1"></p><h3 id="步骤二：添加接入域名"><a href="#步骤二：添加接入域名" class="headerlink" title="步骤二：添加接入域名"></a><strong>步骤二</strong>：添加接入域名</h3><p> 进入网站管理，下面有个新增网站.填写你的信息：<code>域名、源IP(可以使用cmd的命令ping查询)、端口</code>(https=443，http=80)<br> <img src="https://s3.qjqq.cn/3/64f83d7ea8297.webp!color" alt="2"></p><h4 id="步骤三：解析域名到CANME"><a href="#步骤三：解析域名到CANME" class="headerlink" title="步骤三：解析域名到CANME"></a><strong>步骤三</strong>：解析域名到CANME</h4><p> ！<a href="https://s3.qjqq.cn/3/64f83e55cb170.webp!color">3</a></p><p> 将网站解析到初七云的CDN的CANME，下面是阿里云域名解析到CANME<br> <img src="https://s3.qjqq.cn/3/64f83fdc17554.webp!color" alt="4"></p><h5 id="步骤四：申请证书教程"><a href="#步骤四：申请证书教程" class="headerlink" title="步骤四：申请证书教程"></a><strong>步骤四</strong>：申请证书教程</h5><p> <code>1</code>接下来教大家如何申请免费证书，首先我们来到<u><a href="https://ohttps.com/">OHTTPS</a></u>官网进行注册账号</p><p> <code>2</code>进入证书管理页面，点击创建证书。<br><img src="https://s3.qjqq.cn/3/64f847be5776b.webp!color" alt=".."></p><p><code>3</code>点击添加域名，看个人情况选择单域名还是多域名，推荐大家使用多域名。然后在里面输入自己的域名<br><img src="https://s3.qjqq.cn/3/64f848ec76b00.webp!color" alt=""></p><p><code>4</code>下一步我们选择免DNS授权，并添加1条记录至您的DNS域名解析记录中，下面是阿里云域名解析到CANME,然后点击验证解析记录，验证完成后点击创建证书等待证书创建完成<br><img src="https://s3.qjqq.cn/3/64f84a144853a.webp!color" alt=""></p><p><code>5</code>创建证书完毕</p><h6 id="步骤五：配置证书和攻击防护"><a href="#步骤五：配置证书和攻击防护" class="headerlink" title="步骤五：配置证书和攻击防护"></a><strong>步骤五</strong>：配置证书和攻击防护</h6><p> <img src="https://s3.qjqq.cn/3/64f8405fd6486.webp!color" alt="5"><br> <code>1</code>点击CDN证书管理,新增证书将秘钥和内容分别填进去(不要弄混位置了密钥对密钥，内容对内容)，用别的方法申请下来的证书也可以看个人情况。<br> <img src="https://s3.qjqq.cn/3/64f84b332bb32.webp!color" alt=""><br> <code>2</code>回到网站管理，点击编辑按钮填写HTTP监听端口修改:80,填写HTTPS网站证书ID(先前在初七证书管理里面，不要搞错了).如果网站没有设https填写关闭<br>填写HTTPS跳转端口:443,修改回源协议:跟随协议，这里每一步都需要点击一次修改等待刷新成功后继续操作，其他的选项看个人情况是否开启</p><ul><li>CC防护可以在安全配置里面设置，网站链接数量20 超出连接数自动开启点击验证或者其他。看个人情况进行修改点击修改</li></ul><p>最后就大功告成了，可以去<u><a href="https://www.itdog.cn/">iddog</a>网站测试查看是否配置成功。下面是本周使用cdn后的测速<br><img src="https://s3.qjqq.cn/3/64f7383149f28.webp!color" alt=""><br>可以看到速度还是很快的。<br>如果大家还有不懂的问题，以及初七云网站上的问题大家可以进初七云交流群进行询问！！！也可以在下方评论给出建议<br><img src="https://s3.qjqq.cn/3/64f845061adf7.webp!color" alt="6"></p>]]></content>
+        <content type="html"><![CDATA[<p>本站使用的是由<u><a href="https://www.chuqiyun.com/">初七云</a></u>提供的海外cdn加速 (无需备案即可使用)。<br>本篇文章来教大家如何给自己的网站或博客接入cdn，使你的网站访问速度更快。希望这篇文章对你有帮助！话不多说马上开始教程</p><h1 id="初七云海外加速cdn接入教程"><a href="#初七云海外加速cdn接入教程" class="headerlink" title="初七云海外加速cdn接入教程"></a>初七云海外加速cdn接入教程</h1><h2 id="步骤一：注册并实名认证账号"><a href="#步骤一：注册并实名认证账号" class="headerlink" title="步骤一：注册并实名认证账号"></a><strong>步骤一</strong>：注册并实名认证账号</h2><p> 去到<a href="https://www.chuqiyun.com/">初七云的官网</a>注册一个账号，然后选购产品选择内容网络分发，注意要实名，实名需要1块钱！<br> <img src="https://s3.qjqq.cn/3/64f83b7bc229a.webp!color" alt="1"></p><h3 id="步骤二：添加接入域名"><a href="#步骤二：添加接入域名" class="headerlink" title="步骤二：添加接入域名"></a><strong>步骤二</strong>：添加接入域名</h3><p> 进入网站管理，下面有个新增网站.填写你的信息：<code>域名、源IP(可以使用cmd的命令ping查询)、端口</code>(https=443，http=80)<br> <img src="https://s3.qjqq.cn/3/64f83d7ea8297.webp!color" alt="2"></p><h4 id="步骤三：解析域名到CANME"><a href="#步骤三：解析域名到CANME" class="headerlink" title="步骤三：解析域名到CANME"></a><strong>步骤三</strong>：解析域名到CANME</h4><p> ！<a href="https://s3.qjqq.cn/3/64f83e55cb170.webp!color">3</a></p><p> 将网站解析到初七云的CDN的CANME，下面是阿里云域名解析到CANME<br> <img src="https://s3.qjqq.cn/3/64f83fdc17554.webp!color" alt="4"></p><h5 id="步骤四：申请证书教程"><a href="#步骤四：申请证书教程" class="headerlink" title="步骤四：申请证书教程"></a><strong>步骤四</strong>：申请证书教程</h5><p> <code>1</code>接下来教大家如何申请免费证书，首先我们来到<u><a href="https://ohttps.com/">OHTTPS</a></u>官网进行注册账号<br> <code>2</code>进入证书管理页面，点击创建证书。<br><img src="https://s3.qjqq.cn/3/64f847be5776b.webp!color" alt=".."><br><code>3</code>点击添加域名，看个人情况选择单域名还是多域名，推荐大家使用多域名。然后在里面输入自己的域名<br><img src="https://s3.qjqq.cn/3/64f848ec76b00.webp!color" alt=""><br><code>4</code>下一步我们选择免DNS授权，并添加1条记录至您的DNS域名解析记录中，下面是阿里云域名解析到CANME,然后点击验证解析记录，验证完成后点击创建证书等待证书创建完成<br><img src="https://s3.qjqq.cn/3/64f84a144853a.webp!color" alt=""><br><code>5</code>创建证书完毕</p><h6 id="步骤五：配置证书和攻击防护"><a href="#步骤五：配置证书和攻击防护" class="headerlink" title="步骤五：配置证书和攻击防护"></a><strong>步骤五</strong>：配置证书和攻击防护</h6><p> <img src="https://s3.qjqq.cn/3/64f8405fd6486.webp!color" alt="5"><br> <code>1</code>点击CDN证书管理,新增证书将秘钥和内容分别填进去(不要弄混位置了密钥对密钥，内容对内容)，用别的方法申请下来的证书也可以看个人情况。<br> <img src="https://s3.qjqq.cn/3/64f84b332bb32.webp!color" alt="666"><br> <code>2</code>回到网站管理，点击编辑按钮填写HTTP监听端口修改:80,填写HTTPS网站证书ID(先前在初七证书管理里面，不要搞错了).如果网站没有设https填写关闭<br>填写HTTPS跳转端口:443,修改回源协议:跟随协议，这里每一步都需要点击一次修改等待刷新成功后继续操作，其他的选项看个人情况是否开启</p><ul><li>CC防护可以在安全配置里面设置，网站链接数量20 超出连接数自动开启点击验证或者其他。看个人情况进行修改点击修改</li></ul><p>最后就大功告成了，可以去<u><a href="https://www.itdog.cn/">iddog</a>网站测试查看是否配置成功。下面是本周使用cdn后的测速<br><img src="https://s3.qjqq.cn/3/64f7383149f28.webp!color" alt="1"><br>可以看到速度还是很快的。<br>如果大家还有不懂的问题，以及初七云网站上的问题大家可以进初七云交流群进行询问！！！也可以在下方评论给出建议<br><img src="https://s3.qjqq.cn/3/64f845061adf7.webp!color" alt="6"></p>]]></content>
       
       
       <categories>
@@ -27,25 +46,6 @@
             <tag> 教程 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/posts/4a17b156.html"/>
-      <url>/posts/4a17b156.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>he</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
       
     </entry>
     
