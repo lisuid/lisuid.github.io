@@ -245,11 +245,6 @@ if (true) {
         <span class="tagsPageCount">1</span>
       </a>
     
-      <a href="/categories/CDN/教程/" id="/categories/CDN/教程/">
-        <span class="tags-punctuation">#</span>教程
-        <span class="tagsPageCount">1</span>
-      </a>
-    
       <a href="/categories/科学上网/" id="/categories/科学上网/">
         <span class="tags-punctuation">#</span>科学上网
         <span class="tagsPageCount">1</span>
@@ -257,6 +252,11 @@ if (true) {
     
       <a href="/categories/百度网盘/" id="/categories/百度网盘/">
         <span class="tags-punctuation">#</span>百度网盘
+        <span class="tagsPageCount">1</span>
+      </a>
+    
+      <a href="/categories/CDN/教程/" id="/categories/CDN/教程/">
+        <span class="tags-punctuation">#</span>教程
         <span class="tagsPageCount">1</span>
       </a>
     
@@ -462,7 +462,7 @@ queueMicrotask(() => {
 
   const loadTwikoo = () => {
     if (typeof twikoo === 'object') setTimeout(runFn,0)
-    else getScript('https://cdn.cbd.int/twikoo@1.6.20/dist/twikoo.all.min.js').then(runFn)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.21/dist/twikoo.all.min.js').then(runFn)
   }
 
   const getCount = () => {
@@ -537,7 +537,7 @@ queueMicrotask(() => {
     if (typeof twikoo === 'object') {
       runTwikoo()
     } else {
-      getScript('https://cdn.cbd.int/twikoo@1.6.20/dist/twikoo.all.min.js').then(runTwikoo)
+      getScript('https://cdn.cbd.int/twikoo@1.6.21/dist/twikoo.all.min.js').then(runTwikoo)
     }
   }
 
