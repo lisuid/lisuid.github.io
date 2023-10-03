@@ -79,7 +79,7 @@
       <link href="/posts/6df6be9b.html"/>
       <url>/posts/6df6be9b.html</url>
       
-        <content type="html"><![CDATA[<p>本站使用的是由<a href="https://www.chuqiyun.com/">初七云</a>提供的海外cdn加速 (无需备案即可使用)。<br>本篇文章来教大家如何给自己的网站或博客接入cdn，使你的网站访问速度更快。希望这篇文章对你有帮助！话不多说马上开始教程</p><ul><li>初七云海外加速cdn接入教程<h1 id="步骤一：注册并实名认证账号"><a href="#步骤一：注册并实名认证账号" class="headerlink" title="步骤一：注册并实名认证账号"></a><strong>步骤一</strong>：注册并实名认证账号</h1>去到<a href="https://www.chuqiyun.com/">初七云的官网</a>注册一个账号，然后选购产品选择内容网络分发，注意要实名，实名需要1块钱！<br><img src="https://s3.qjqq.cn/3/64f83b7bc229a.webp!color" alt=""></li></ul><h1 id="步骤二：添加接入域名"><a href="#步骤二：添加接入域名" class="headerlink" title="步骤二：添加接入域名"></a><strong>步骤二</strong>：添加接入域名</h1><p> 进入网站管理，下面有个新增网站.填写你的信息：域名、源IP(可以使用cmd的命令ping查询)、端口(https=443，http=80)<br> <img src="https://s3.qjqq.cn/3/64f83d7ea8297.webp!color" alt=""></p><h1 id="步骤三：解析域名到CANME"><a href="#步骤三：解析域名到CANME" class="headerlink" title="步骤三：解析域名到CANME"></a><strong>步骤三</strong>：解析域名到CANME</h1><p> <img src="https://s3.qjqq.cn/3/64f83e55cb170.webp!color" alt=""><br>将网站解析到初七云的CDN的CANME，下面是阿里云域名解析到CANME<br> <img src="https://s3.qjqq.cn/3/64f83fdc17554.webp!color" alt=""></p><h1 id="步骤四：申请证书教程"><a href="#步骤四：申请证书教程" class="headerlink" title="步骤四：申请证书教程"></a><strong>步骤四</strong>：申请证书教程</h1><p> 1.接下来教大家如何申请免费证书，首先我们来到<a href="https://ohttps.com/">OHTTPS</a>官网进行注册账号</p><p> 1.进入证书管理页面，点击创建证书。<br><img src="https://s3.qjqq.cn/3/64f847be5776b.webp!color" alt=""></p><p>2.点击添加域名，看个人情况选择单域名还是多域名，推荐大家使用多域名。然后在里面输入自己的域名<br><img src="https://s3.qjqq.cn/3/64f848ec76b00.webp!color" alt=""></p><p>3.下一步我们选择免DNS授权，并添加1条记录至您的DNS域名解析记录中，下面是阿里云域名解析到CANME,然后点击验证解析记录，验证完成后点击创建证书等待证书创建完成<br><img src="https://s3.qjqq.cn/3/64f84a144853a.webp!color" alt=""></p><p>4.创建证书完毕</p><h1 id="步骤五：配置证书和攻击防护"><a href="#步骤五：配置证书和攻击防护" class="headerlink" title="步骤五：配置证书和攻击防护"></a><strong>步骤五</strong>：配置证书和攻击防护</h1><p> <img src="https://s3.qjqq.cn/3/64f8405fd6486.webp!color" alt=""><br> 1.点击CDN证书管理,新增证书将秘钥和内容分别填进去(不要弄混位置了密钥对密钥，内容对内容)，用别的方法申请下来的证书也可以看个人情况。<br> <img src="https://s3.qjqq.cn/3/64f84b332bb32.webp!color" alt=""><br> 2.回到网站管理，点击编辑按钮填写HTTP监听端口修改:80,填写HTTPS网站证书ID(先前在初七证书管理里面，不要搞错了).如果网站没有设https填写关闭<br>填写HTTPS跳转端口:443,修改回源协议:跟随协议，这里每一步都需要点击一次修改等待刷新成功后继续操作，其他的选项看个人情况是否开启</p><blockquote><ul><li>CC防护可以在安全配置里面设置，网站链接数量20 超出连接数自动开启点击验证或者其他。看个人情况进行修改点击修改</li></ul></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>本站使用的是由<a href="https://www.chuqiyun.com/">初七云</a>提供的海外cdn加速 (无需备案即可使用)。<br>本篇文章来教大家如何给自己的网站或博客接入cdn，使你的网站访问速度更快。希望这篇文章对你有帮助！话不多说马上开始教程</p><ul><li>初七云海外加速cdn接入教程<h1 id="步骤一：注册并实名认证账号"><a href="#步骤一：注册并实名认证账号" class="headerlink" title="步骤一：注册并实名认证账号"></a><strong>步骤一</strong>：注册并实名认证账号</h1>去到<a href="https://www.chuqiyun.com/">初七云的官网</a>注册一个账号，然后选购产品选择内容网络分发，注意要实名，实名需要1块钱！<br><img src="https://s3.qjqq.cn/3/64f83b7bc229a.webp!color" alt=""></li></ul><h1 id="步骤二：添加接入域名"><a href="#步骤二：添加接入域名" class="headerlink" title="步骤二：添加接入域名"></a><strong>步骤二</strong>：添加接入域名</h1><p> 进入网站管理，下面有个新增网站.填写你的信息：域名、源IP(可以使用cmd的命令ping查询)、端口(https=443，http=80)<br> <img src="https://s3.qjqq.cn/3/64f83d7ea8297.webp!color" alt=""></p><h1 id="步骤三：解析域名到CANME"><a href="#步骤三：解析域名到CANME" class="headerlink" title="步骤三：解析域名到CANME"></a><strong>步骤三</strong>：解析域名到CANME</h1><p> <img src="https://s3.qjqq.cn/3/64f83e55cb170.webp!color" alt=""><br>将网站解析到初七云的CDN的CANME，下面是阿里云域名解析到CANME<br> <img src="https://s3.qjqq.cn/3/64f83fdc17554.webp!color" alt=""></p><h1 id="步骤四：申请证书教程"><a href="#步骤四：申请证书教程" class="headerlink" title="步骤四：申请证书教程"></a><strong>步骤四</strong>：申请证书教程</h1><p> 1.接下来教大家如何申请免费证书，首先我们来到<a href="https://ohttps.com/">OHTTPS</a>官网进行注册账号</p><p> 1.进入证书管理页面，点击创建证书。<br><img src="https://s3.qjqq.cn/3/64f847be5776b.webp!color" alt=""></p><p>2.点击添加域名，看个人情况选择单域名还是多域名，推荐大家使用多域名。然后在里面输入自己的域名<br><img src="https://s3.qjqq.cn/3/64f848ec76b00.webp!color" alt=""></p><p>3.下一步我们选择免DNS授权，并添加1条记录至您的DNS域名解析记录中，下面是阿里云域名解析到CANME,然后点击验证解析记录，验证完成后点击创建证书等待证书创建完成<br><img src="https://s3.qjqq.cn/3/64f84a144853a.webp!color" alt=""></p><p>4.创建证书完毕</p><h1 id="步骤五：配置证书和攻击防护"><a href="#步骤五：配置证书和攻击防护" class="headerlink" title="步骤五：配置证书和攻击防护"></a><strong>步骤五</strong>：配置证书和攻击防护</h1><p> <img src="https://s3.qjqq.cn/3/64f8405fd6486.webp!color" alt=""><br> 1.点击CDN证书管理,新增证书将秘钥和内容分别填进去(不要弄混位置了密钥对密钥，内容对内容)，用别的方法申请下来的证书也可以看个人情况。<br> <img src="https://s3.qjqq.cn/3/64f84b332bb32.webp!color" alt=""><br> 2.回到网站管理，点击编辑按钮填写HTTP监听端口修改:80,填写HTTPS网站证书ID(先前在初七证书管理里面，不要搞错了).如果网站没有设https填写关闭<br>填写HTTPS跳转端口:443,修改回源协议:跟随协议，这里每一步都需要点击一次修改等待刷新成功后继续操作，其他的选项看个人情况是否开启</p><blockquote><ul><li>CC防护可以在安全配置里面设置，网站链接数量20 超出连接数自动开启点击验证或者其他。看个人情况进行修改点击修改</li></ul></blockquote><p><code>注意事项</code> ：有些人配置完了的时候访问网址的时候显示530，这可能就是你的证书没有配置好，需要检查证实有没有弄错。如果遇到重定向的问题需要配置https</p><ul><li>如果使用了强制开启https和协议跟随就是走https,协议跟随是给兼顾https和http兼容的客户用的</li><li>多重定向的情况可能是选择的http回源的同时源站开启了强制https，这里的解决方案是关闭https或者回源选择https</li></ul>]]></content>
       
       
       <categories>
@@ -123,31 +123,6 @@
             <tag> Apple </tag>
             
             <tag> 苹果 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>初一往事</title>
-      <link href="/posts/76c77c8a.html"/>
-      <url>/posts/76c77c8a.html</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="94babb7c2d92c0741e7dc79f1bd68d9657edea318449ce143abd8b32c397f95a">b061c1c249321ae73ec1080068463667773d43060fea02aa3b218de2dacf7c6bcfcaa389406fe529e49980ab186779a4f2ef07d17f485525f0f79c15031c2c577338e6e0de3fe15184a9724c89c80572c722d1bb5cba0afa966bf2d6bb4d65d610f9e63e020dfa8c57a3bf3375cc83c2c54e4bead1a74e5b160757282f7731d6ece863a54cc52170678ee7d04a4ac2b9f2e7073811a6b3124cbe7a1ae849f15f06172a63ac480502e5d35a45da7b5ec2415c0882f2e1528392c548139e8217aa68cf643ab8d74a097ae9f4e9049d1e338b92c72eb7882aba7b80e84bb7f92c3f0f3a6ec8dd9390bd9ad773ad96bbaed3707b31d7708a9923c53ab41a1ec4379b7f586de0bb0b379128f5ca688690b2a687843fa050cd721561cb9c47afae47bfdeead03ae1d7136d9c339d912b92d2da1217de504ef37d855d2c515d28ce596342562bf4faeb9b429ac467d25e3b7ffcbbbdaae85a9c144e42ef3995d4fb9d32865e37b4d037def00b87c6c1a5eeeeac34346ba6353cbc44f78fb986b84694bd1429eca7df7e34717cae3e938b7ec5ff92ef98b11092a17e2869db74aaedd3e13ba63834b5641e1508a8174d1f5b49412afbb7c0489ba2375df1d9acc39d4557c310d3e16dedca2a8924c93a2fbcbf8140d3ac42fe76bfeb1bf6641d871bbafde97ae3df3ac0648cdf82531c24eb2af7585823bc2cda671fff08ecce78361389c9693f313d3ec088e4c9b72782eff54ed139852405b94b2753737ad505f411d8cd50beb5bd43b45da73961c49b73f8ccd24bd8c5f81ce625eb86aab4b149c043f9c6e4c82e3e90e7cbd2e7cc232a3cd6007249af52dce70d983547919cbfa2c86fc88f8f9b589aa75caad210fdfe2fa04806808ec57f1ac8a1e2f6dd600194edc5808baa2aab7a045f764558b1bea3234f898117fb172c8f03356b49689770af930e45581a4c5c9310db31d175f003e32705fdad6027f0de71d1b41dc8c631f7b4f42bcfbb840fcfa2b98abe8fa9f0adfbedb28d97a5f55511c696da19b9351547674a451db56ac4efe4ab6a10beb856e5f8ebfda05830065b641701885141dcfdfc2f9b001089328bf154ccc6c0e9b540f954a766d8bc89b57457bfb51f9eed305f0f52660beaedec0a2865e732c5422f33998b70e61c86d8615d18e9c208ec561348f0e4d9b878df6c56b38b974ac6e349d805552ebd7419211e4715ba7e440b86a9951db4823aa07661b86ba2e0b72ca23001daae26b12ad853e9e1753d889a545c3ca10aa722ddd82a47d49917c94f0555eba7b7ec7715d29cb357edfc215c073b87c510008543889963f598679376128405cb215b7e85c0ddecc2d217c4295ef3723ab1c0ecc60776f206e9450175d34fba9e08891531de30be3c6a4e72f8d710f551350bf52ceb1cd433e6d3d902931113b02ac5842c99379f7c606bbc30780eb4e09bbf1e1e7eeef1caeef542dd2dc620e17405e281795f8f9bfffb902cee98ea6923bbce21fcf05d25293120e80472bc3a2f821fe8a4c6421743992e1d917b9b1071d518a8c3a6901e2167a620ec78008aa580c6a6a7097365cc8ff5fced4e7bad99e12a23f496bc57ec5838b46a89e994f1a6773d249f18d4751f15db4d86f6d0c5403d6e33e65d0a42f40c6b35e9bbc8a37bf368d0c7ac70fd23dc65d8a69e0c01113e15309092a04388c4332c7f130beb95f7c81c2460e79e923147b9e73540730c650fa49cf5e01dd7f16a0c8f6945b5d6c4063d350297c2133296f2c5e84b44fa8aff29ad92c4750ea3f4297a09c42880f37a158377a123438929507ebf9500dc48a0c50a5d7979cb217df299e4f43abd079ed43b9b3f58467a2ccbd32e11db5f83ea6385bb6877093ae63f17773e250cefa44c23673cc7dc6b6dce9e9cc4cb2df59f0f82cfa53db0febfab0e410172a470288146ccda838addd9379e4ee3632bac152413e49415cd6786a94543ce4fbfccf9750d11dea99e1eceb2fb84f6429e818d4a34b41bf054a4ff404e517f388181d4bc7ec328073c061b559c064ed950ce831e5a81a96a5ea0d7bbed6a3c63b3b3dcf089a67c0702c4dd274f64eee88bb87efbb8e6207acd4f71549b32689b46417a8a5447753057315f0e629fd9b712ccc3297d7610caeaab251f15872e1a26a50af59eabecb4aa27ceafce6dedb7992ca1a07417603efeaba8218c57d163c576de7e53c364ae78927bdeea1093791ccc37380e3189534e9bc0dc218d79cf5636aa366c0503846d10537cfded2a8df11e48ce6ad14cd6e9e0557b0f3b6fd792f033ab7ddbb1b9c510f8662f6a5c1f9d33a5ccae5e069b8c955caf86085e77d8f4587479d970c822fb3bb1ab6c246f0c6e11664a61659c0f48e545eb3eff44ca9f929484d2afa1a3610ae1b1a8871fc32b4528e3dc1d286823498a86c12b271a721af2f78ef2abe6ae5d965f3f0b6d25aaf2b700c25906fd6c0bdcabc105bd069b149fac2481cc70dcc1bcd0d226392d919109d151e9071f2d80930c469e3d971629c20e32dde2480d9debd4152885210527d66acf12b8a083732b70cb74ff9b540a1aebb532b8b0c8f2c3b00da52510d20fb1cf52fcf479517267949f7099f833cfe3f088ba3944e64a7dfc66b9016d570db9abe65cc59fa9d48d28b7bc887e85e40037a129a6206d3f329b925569e795827a89f26ef6aef09a2e2d46ca1cc8b1ce4c629dd2bba042da3944d6d80f91fcc71ab8094455ddaf3faa27ce6a52dd68b263fdb9f3a55f752c6ab744b9c766ed35a222799016a74e53529523c634c43983618a908a95693f7db694d91be1ac0bfababd5e71b9422b0f6d531cc793922def2d5dddaf89aad8d81bb99b2dabe7cda0b696d1caad1f54c9935ae9c52c09ca79da1851577735f2a22bd382029daf0ce2fb5b488ee1688d92af36f1bd4373014de30aa4dd4268beece7b2e3ed089f8db45208671a54863c13027009c44dfac1ceef890087c522ff0c22a83e1a619f10064d7bebc5246cd60547360e1e996e7830fe9ffd8be815bc6bbdea9ea23e8d4bd351b1f38dfe67726a23b5eeffdecd1aa8efe3fe2fdd34b80cb3c28991c63539518e0f46caa55c71f6d57508e9a92cc2fb1f006cded2c47630a1e84b54e54402de577a92554be6c9b865890c5c51cbcaf551cac4bfbfbcda922152de2968f3de27de4b839a9dc95c223cc2ed753a06caab523f9b87520bdbca389b99dce03872018ce4f1ec9e30fcd9cc9c13ceab6d305d995710eea34f6f733a6253c0510ef00800a660778871444eb01ad19887f171538daea855a5d06bcbf145dc8df19af4a860401e3e5bf263e13241a18835cc6e9532fc37f826fb896d287769ea1b08c2d2e3ac40412e8ff5873fc59129d6c70c4df8431a51050e1b9767057c844e176785aec7e2493183aafd36a0aee4dee0cd377320b2ebbd0b0ee96310c426e2fff9944a7865e0b8f0b374cdc36f19e19a85cc95e3799eed7193</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入访问密码后查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> 初中往事 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 初中 </tag>
             
         </tags>
       
@@ -395,44 +370,6 @@
             <tag> AI </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>my</title>
-      <link href="/posts/b853ce8d.html"/>
-      <url>/posts/b853ce8d.html</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="0762fad60f8bb292cb856f53221d82486a405277c1716a4f3e4435864b74bd4f">52dfe27d09a8ee95fea7ecac6c132aa997248cce046ca26676f76f0e521c7f3f2518017c293ec66f4d5e980dca88e7a1d04733bf12fbfd6a483bb08f6bb7d8391d72e8c83a142b2b4b9fdb42bc00237643d11a37d93daeeef8ba567a73f8544498dbf0210ccaf42faec90b54af44f7161d92ed67c8a760de0622f6f2c5b0f9b52df2909a4b9dd592056ab005f81adc59356e0e5a5764adae318d28af8aac5641043a27879d3fda26a56f793cf0cd741b</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入访问密码后查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      <categories>
-          
-          <category> 初中往事 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 初中 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>about</title>
-      <link href="/posts/undefined.html"/>
-      <url>/posts/undefined.html</url>
-      
-        <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，您输入的密码错误，请检查后重新输入。" data-whm="抱歉, 当前文章不能被校验, 不过您还是可以看看解密后的内容。">  <script id="hbeData" type="hbeData" data-hmacdigest="d854898871cf87b3b484e0741dd044a7bbf594f083bc8660b989f589b39d8c45">52dfe27d09a8ee95fea7ecac6c132aa997248cce046ca26676f76f0e521c7f3f4636694791a072bc7826ee014d1a0a9f04a111da7bcce57d7ec376c3d08eef81e1fc394bd3cace76c3a4b37bb3fa2640613485e55fe9e63270f9bf19f84a57a3b6fb2aaf04e43fe19b19db980d3f86dd90df7f448bb4bd8dff6dd3bd041f8dc2f4cb4c1a8237a1eb12a9ceb3125e6858f1183ad10940a0983f7863763f8f47c365515c774c53b625774853df46f050efae776e26eac5f29f40eb4c08edf32732311220950e4ef27a6333a902b937e29ce5e2f80654a3492a64fbf166fd70433e77d8b5c7a15ab7e32551d1c35d9cf3adddac0c83a995072640d90a00ca64b8410f286fde75e0f40a88fb2c502398a145f2b49658f8dd85b8ab8ed36960f1f4a5445f578fa45cac00b78e4905539127a8094f2f1d501723443b740c11778cc95fe3aa2d74f061d75d8336c00ef97a6d0907d4fa423f9aa3931ce3e1304eb03019f8e6b7d469c91a7c00dac89a0647b76d213cbc85a9e655eff845a2a45380376187672e119d19014818de5d26be71c6eda9358d6f6234c899c81982120ce60f78120c9dd44bc0eb4f81edf1796ee0d1feda37cb9cc586ad9d9b51e458d53ca258a59e26e7b2b0198d612a5c71a4ba05039498803f4fa139c9aba98c39daaa8ba53f64be5683227ed108e618a9739046f676d62a908cfa9ad8491e9ab14a11e879c6ad0fe2ec76737e20b5e75ab27e797541eb2b4d67d37cff80bee5aa87852eb0acc83794b79ac8b65b86251abeae3c7a1fac0bbbbc5d7e1de8d40cba3428104e62cff981076c2ee1c731769236aae48493e1765b285f8d89b02c2d7cc3750233ce1306e904fb114c44cd95a505370d23f2abb25069b7c0122690fdab449bf5efbbb1c357ad9dfaad27738aa2248fd2e28397e514de6cd2f64fe76876d65f3b53d85c3d0574bfed4ccfa9b8dc89787d06db892f48b23bf414b235a989cb79f4966195bd0c39f17bb6880142c9f86a07a71e7b0ae51c546f394c95282b97d5f54f37caebd57a017a91913d0091b4812706397c97bfb4f924612f9da7695276b3093094fcdaf525969cb5e654fb8184b2916b0e95f8259793e41e420126ce4430c4391e79e1a0cd24fc4f66acbb09d2a11fbdb5d6d53be50f4cfde69b45bb359e54dbd993a4c93995f83921eded2557bdb05ae16bb0a6e69a404097493e195d47eae9c398d4904b305240761624549d00141c8c69bd2cfface273d93b1021e4bcfb8cf522391bd37d95a890e41dada101acda60e3c9045995ccd36050a117f67d3c58768324771b9b4e7c8a3a897832e3c351b7c88cad161f7c0a513d7814f2ecc9630a30af960a96cf5af4c9c0b25cb99860e498e5cb638a3879028f0e92091f6e428e0be936ed971398861ef7fa3163407b9984e396be20672f708153d91edfb8ce24b66d1fe10af17f4386cb295021bf146a646e7a70ee9b26c6ff58d2c9f538</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">当前文章暂不对外可见，请输入访问密码后查看！</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
       
     </entry>
     
