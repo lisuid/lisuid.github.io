@@ -154,8 +154,9 @@ var defaultPlayMusicList = [];
 var themeColorMeta, pageHeaderEl, navMusicEl, consoleEl;
 
 document.addEventListener("DOMContentLoaded", function () {
-  let headerContentWidth, $nav;
+  let headerContentWidth, $nav, $rightMenu;
   let mobileSidebarOpen = false;
+
   const adjustMenu = init => {
     const getAllWidth = ele => {
       return Array.from(ele).reduce((width, i) => width + i.offsetWidth, 0);
@@ -565,7 +566,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return top <= viewPortHeight;
       }
 
-      if (isInViewPortOfOneNoDis(pageBottomDomFlag) || percentage > 90) {
+      if (isInViewPortOfOneNoDis(pageBottomDomFlag || percentage > 90) && currentTop > 20) {
         $navTotop.classList.add("long");
         $percentBtn.textContent = "返回顶部";
       } else {
@@ -699,37 +700,27 @@ document.addEventListener("DOMContentLoaded", function () {
     let $tocLink, $cardToc, autoScrollToc, isExpand;
     if (isToc) {
       const $cardTocLayout = document.getElementById("card-toc");
-      $cardToc = $cardTocLayout.getElementsByClassName("toc-content")[0];
+      $cardToc = $cardTocLayout.querySelector(".toc-content");
       $tocLink = $cardToc.querySelectorAll(".toc-link");
+      $tocPercentage = $cardTocLayout.querySelector(".toc-percentage");
       isExpand = $cardToc.classList.contains("is-expand");
 
-      window.mobileToc = {
-        open: () => {
-          $cardTocLayout.style.cssText = "animation: toc-open .3s; opacity: 1; right: 55px";
-        },
-
-        close: () => {
-          $cardTocLayout.style.animation = "toc-close .2s";
-          setTimeout(() => {
-            $cardTocLayout.style.cssText = "opacity:''; animation: ''; right: ''";
-          }, 100);
-        },
-      };
-
       // toc元素點擊
-      $cardToc.addEventListener("click", e => {
+      const tocItemClickFn = e => {
+        const target = e.target.closest(".toc-link");
+        if (!target) return;
+
         e.preventDefault();
-        const target = e.target.classList;
-        if (target.contains("toc-content")) return;
-        const $target = target.contains("toc-link") ? e.target : e.target.parentElement;
         anzhiyu.scrollToDest(
-          anzhiyu.getEleTop(document.getElementById(decodeURI($target.getAttribute("href")).replace("#", ""))) - 60,
+          anzhiyu.getEleTop(document.getElementById(decodeURI(target.getAttribute("href")).replace("#", ""))),
           300
         );
         if (window.innerWidth < 900) {
-          window.mobileToc.close();
+          $cardTocLayout.classList.remove("open");
         }
-      });
+      };
+
+      anzhiyu.addEventListenerPjax($cardToc, "click", tocItemClickFn);
 
       autoScrollToc = item => {
         const activePosition = item.getBoundingClientRect().top;
@@ -798,6 +789,50 @@ document.addEventListener("DOMContentLoaded", function () {
     anzhiyu.addEventListenerPjax(window, "scroll", tocScrollFn, { passive: true });
   };
 
+  const handleThemeChange = mode => {
+    const globalFn = window.globalFn || {};
+    const themeChange = globalFn.themeChange || {};
+    if (!themeChange) {
+      return;
+    }
+
+    Object.keys(themeChange).forEach(key => {
+      const themeChangeFn = themeChange[key];
+      themeChangeFn(mode);
+    });
+
+    rm && rm.hideRightMenu();
+
+    const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
+    if (mode === "light") {
+      menuDarkmodeText.textContent = "深色模式";
+    } else {
+      menuDarkmodeText.textContent = "浅色模式";
+    }
+
+    if (!GLOBAL_CONFIG_SITE.isPost) {
+      const root = document.querySelector(":root");
+      root.style.setProperty("--anzhiyu-bar-background", "var(--anzhiyu-meta-theme-color)");
+      requestAnimationFrame(() => {
+        anzhiyu.initThemeColor();
+      });
+
+      // 要改回来默认主色;
+      document.documentElement.style.setProperty(
+        "--anzhiyu-main",
+        getComputedStyle(document.documentElement).getPropertyValue("--anzhiyu-theme")
+      );
+      document.documentElement.style.setProperty(
+        "--anzhiyu-theme-op",
+        getComputedStyle(document.documentElement).getPropertyValue("--anzhiyu-main") + "23"
+      );
+      document.documentElement.style.setProperty(
+        "--anzhiyu-theme-op-deep",
+        getComputedStyle(document.documentElement).getPropertyValue("--anzhiyu-main") + "dd"
+      );
+    }
+  };
+
   /**
    * Rightside
    */
@@ -855,9 +890,20 @@ document.addEventListener("DOMContentLoaded", function () {
       saveToLocal.set("aside-status", saveStatus, 2);
       $htmlDom.toggle("hide-aside");
     },
-    "mobile-toc-button": () => {
+    "mobile-toc-button": item => {
       // Show mobile toc
-      document.getElementById("card-toc").classList.toggle("open");
+      const tocEle = document.getElementById("card-toc");
+      tocEle.style.transformOrigin = `right ${item.getBoundingClientRect().top + 17}px`;
+      tocEle.style.transition = "transform 0.3s ease-in-out";
+      tocEle.classList.toggle("open");
+      tocEle.addEventListener(
+        "transitionend",
+        () => {
+          tocEle.style.transition = "";
+          tocEle.style.transformOrigin = "";
+        },
+        { once: true }
+      );
     },
     "chat-btn": () => {
       // Show chat
@@ -896,7 +942,8 @@ document.addEventListener("DOMContentLoaded", function () {
       target.classList.toggle("hide");
     };
 
-    document.querySelector("#sidebar-menus .menus_items").addEventListener("click", handleClickOfSubMenu);
+    document.querySelector("#sidebar-menus .menus_items") &&
+      document.querySelector("#sidebar-menus .menus_items").addEventListener("click", handleClickOfSubMenu);
   };
 
   /**
@@ -1194,7 +1241,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!path) {
       // 非文章情况，直接设置不需要请求了
       root.style.setProperty("--anzhiyu-bar-background", "var(--anzhiyu-meta-theme-color)");
-      anzhiyu.initThemeColor();
+      requestAnimationFrame(() => {
+        anzhiyu.initThemeColor();
+      });
 
       // 要改回来默认主色
       document.documentElement.style.setProperty(
@@ -1222,7 +1271,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         root.style.setProperty("--anzhiyu-bar-background", value);
-        anzhiyu.initThemeColor();
+        requestAnimationFrame(() => {
+          anzhiyu.initThemeColor();
+        });
 
         if (GLOBAL_CONFIG.mainTone.cover_change) {
           document.documentElement.style.setProperty("--anzhiyu-main", value);
@@ -1257,7 +1308,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             root.style.setProperty("--anzhiyu-bar-background", value);
-            anzhiyu.initThemeColor();
+            requestAnimationFrame(() => {
+              anzhiyu.initThemeColor();
+            });
 
             if (GLOBAL_CONFIG.mainTone.cover_change) {
               document.documentElement.style.setProperty("--anzhiyu-main", value);
@@ -1284,7 +1337,9 @@ document.addEventListener("DOMContentLoaded", function () {
                   }
 
                   root.style.setProperty("--anzhiyu-bar-background", value);
-                  anzhiyu.initThemeColor();
+                  requestAnimationFrame(() => {
+                    anzhiyu.initThemeColor();
+                  });
 
                   if (GLOBAL_CONFIG.mainTone.cover_change) {
                     document.documentElement.style.setProperty("--anzhiyu-main", value);
@@ -1299,24 +1354,32 @@ document.addEventListener("DOMContentLoaded", function () {
                   }
                 } else {
                   root.style.setProperty("--anzhiyu-bar-background", fallbackValue);
-                  anzhiyu.initThemeColor();
+                  requestAnimationFrame(() => {
+                    anzhiyu.initThemeColor();
+                  });
                   document.documentElement.style.setProperty("--anzhiyu-main", fallbackValue);
                 }
               } catch {
                 root.style.setProperty("--anzhiyu-bar-background", fallbackValue);
-                anzhiyu.initThemeColor();
+                requestAnimationFrame(() => {
+                  anzhiyu.initThemeColor();
+                });
                 document.documentElement.style.setProperty("--anzhiyu-main", fallbackValue);
               }
             } else {
               root.style.setProperty("--anzhiyu-bar-background", fallbackValue);
-              anzhiyu.initThemeColor();
+              requestAnimationFrame(() => {
+                anzhiyu.initThemeColor();
+              });
               document.documentElement.style.setProperty("--anzhiyu-main", fallbackValue);
             }
           }
         } catch (err) {
           console.error("Error fetching data:", err);
           root.style.setProperty("--anzhiyu-bar-background", fallbackValue);
-          anzhiyu.initThemeColor();
+          requestAnimationFrame(() => {
+            anzhiyu.initThemeColor();
+          });
           document.documentElement.style.setProperty("--anzhiyu-main", fallbackValue);
         }
       }
@@ -1406,7 +1469,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 监听nav是否被其他音频暂停⏸️
   const listenNavMusicPause = function () {
     const timer = setInterval(() => {
-      if (navMusicEl.querySelector("#nav-music meting-js").aplayer) {
+      if (navMusicEl && navMusicEl.querySelector("#nav-music meting-js").aplayer) {
         clearInterval(timer);
         let msgPlay = '<i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span>';
         let msgPause = '<i class="anzhiyufont anzhiyu-icon-pause"></i><span>暂停音乐</span>';
@@ -1466,7 +1529,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500);
     }, 3000);
   }
-
   function statistics51aInit() {
     const loadScript = (url, charset = "UTF-8", crossorigin, id) => {
       return new Promise((resolve, reject) => {
@@ -1578,7 +1640,7 @@ document.addEventListener("DOMContentLoaded", function () {
               pjax.loadUrl("/");
               break;
             case 68:
-              anzhiyu.switchDarkMode();
+              rightSideFn.darkmode();
               break;
             case 70:
               pjax.loadUrl("/fcircle/");
@@ -1635,6 +1697,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  function addDarkModeEventListener(elementId, childSelector) {
+    const element = document.getElementById(elementId);
+    if (element && childSelector) {
+      const childElement = element.querySelector(childSelector);
+      childElement && childElement.addEventListener("click", rightSideFn.darkmode);
+    } else if (element) {
+      element.addEventListener("click", rightSideFn.darkmode);
+    }
+  }
+
   const unRefreshFn = function () {
     window.addEventListener("resize", () => {
       adjustMenu(false);
@@ -1645,7 +1717,11 @@ document.addEventListener("DOMContentLoaded", function () {
       sidebarFn.close();
     });
 
-    anzhiyu.darkModeStatus();
+    // 处理右键
+    $rightMenu = document.getElementById("rightMenu");
+    addDarkModeEventListener("menu-darkmode");
+    addDarkModeEventListener("sidebar", ".darkmode_switchbutton");
+
     clickFnOfSubMenu();
     GLOBAL_CONFIG.islazyload && lazyloadImg();
     GLOBAL_CONFIG.copyright !== undefined && addCopyright();
@@ -1674,6 +1750,8 @@ document.addEventListener("DOMContentLoaded", function () {
     pageHeaderEl = document.getElementById("page-header");
     navMusicEl = document.getElementById("nav-music");
     consoleEl = document.getElementById("console");
+
+    addDarkModeEventListener("console", ".darkmode_switchbutton");
 
     if (GLOBAL_CONFIG_SITE.isPost) {
       GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice();
@@ -1739,6 +1817,8 @@ document.addEventListener("DOMContentLoaded", function () {
     anzhiyu.switchRightClickMenuHotReview();
     anzhiyu.getCustomPlayList();
     anzhiyu.addEventListenerConsoleMusicList(false);
+    anzhiyu.initPaginationObserver();
+
     setTimeout(() => {
       setInputFocusListener();
       if (typeof addFriendLinksInFooter === "function") {

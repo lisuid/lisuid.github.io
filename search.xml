@@ -135,7 +135,7 @@
       <link href="/posts/2013454d.html"/>
       <url>/posts/2013454d.html</url>
       
-        <content type="html"><![CDATA[<div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://www.fomal.cc/posts/2013454d.html">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="background-image: url(https://api.iowen.cn/favicon/www.fomal.cc/posts/2013454d.html.png);"></div>        <div class="tag-link-right">            <div class="tag-link-title">Fomalhaut-Markdown语法与外挂标签写法汇总</div>            <div class="tag-link-sitename">https://www.fomal.cc/posts/2013454d.html</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div>]]></content>
+        <content type="html"><![CDATA[<div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://www.fomal.cc/posts/2013454d.html">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="">          <i class="anzhiyufont anzhiyu-icon-link" style=""></i>        </div>        <div class="tag-link-right">            <div class="tag-link-title">Fomalhaut-Markdown语法与外挂标签写法汇总</div>            <div class="tag-link-sitename">https://www.fomal.cc/posts/2013454d.html</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div>]]></content>
       
       
       <categories>
@@ -203,9 +203,9 @@
             
             <tag> AI </tag>
             
-            <tag> chatgpt </tag>
-            
             <tag> 教程 </tag>
+            
+            <tag> chatgpt </tag>
             
         </tags>
       
