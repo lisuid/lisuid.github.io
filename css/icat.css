@@ -28,6 +28,30 @@
 
 
 
+.footer_custom_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
-  
+
+.swiper-wrapper{
+  flex-direction: column;
+}
+.history_slide {
+  text-align:left;
+  font-size: 14px;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+#history-baidu > .blog-slider__pagination{
+  display:none
+}
+.history_slide_time{
+  color: #858585;
+  Font-style: italic;
+  font-weight: lighter;
+}
+/* 去年今日样式 */
